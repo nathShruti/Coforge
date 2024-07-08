@@ -1,0 +1,60 @@
+STATIC CONSTRUCTOR
+A static constructor is defined uusing the 'STATIC' keyword and does not take any PARAMETERS.
+
+- Used to initialize any static fields of a class or perform any necessary static initialization before any instance of
+  the class is created or any static members are accessed.
+- They are called before any static members are accessed or any instance of the class is created. 
+  It is executed automatically by the runtime and we do not explicitly call it in our code.
+
+SYNTAX:
+Do not have access modifiers (eg- public, private) and are named exactly like the class. Since they don't have parameters,
+they can't be called DIRECTLY.
+
+class Sample
+{
+    static Sample()
+    {
+        ........
+    }
+}
+
+Why do we need static constructors in c#?
+Initialization of Static Members: Static constructors are used to initialize static fields or properties of a class. 
+        This ensures that static data is properly set up before it is accessed for the first time.
+
+Single Execution: A static constructor is guaranteed to execute only once, and it runs before any 
+        static members of the class are accessed. This ensures that the initialization logic is executed exactly once, 
+        preventing issues related to multiple initializations.
+
+Encapsulation of Initialization Logic: Static constructors allow you to encapsulate the initialization logic within 
+        the class itself. This promotes better organization of code and ensures that the initialization is tightly 
+        coupled with the class it belongs to.
+
+Thread Safety: The .NET runtime takes care of the thread safety for static constructors. 
+        This means that the static constructor is executed in a thread-safe manner, 
+        ensuring that no race conditions occur during the initialization of static members.
+
+Implicit Invocation: You do not need to call a static constructor explicitly. The .NET runtime automatically 
+        calls it before any static members of the class are accessed, which simplifies the code and ensures 
+        proper initialization.
+
+What would happen if we didn't use static constructors?
+Manual Initialization: Without static constructors, you would need to manually initialize static members 
+        somewhere in your code. This could lead to scattered initialization logic, making the code harder 
+        to maintain and understand.
+
+Initialization Errors: Manually ensuring that static members are initialized before they are accessed can be error-prone. 
+        There is a risk that static members might be accessed before they are properly initialized, 
+        leading to runtime errors or undefined behavior.
+
+Repeated Initialization: Without a static constructor, there is no built-in mechanism to ensure that the 
+        initialization logic is executed only once. This could result in multiple initializations, 
+        causing performance issues or incorrect behavior.
+
+Complexity in Thread Safety: Ensuring thread safety during manual initialization of static members can be complex. 
+        Without a static constructor, you would need to implement your own synchronization mechanisms to prevent 
+        race conditions during initialization.
+
+Code Duplication: Without static constructors, you might end up duplicating initialization code in multiple places to 
+        ensure that static members are set up correctly before use. This violates the DRY (Don't Repeat Yourself) 
+        principle and makes the codebase harder to manage.
