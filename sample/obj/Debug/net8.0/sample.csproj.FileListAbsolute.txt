@@ -1,0 +1,14 @@
+C:\Coforge\sample\bin\Debug\net8.0\sample.exe
+C:\Coforge\sample\bin\Debug\net8.0\sample.deps.json
+C:\Coforge\sample\bin\Debug\net8.0\sample.runtimeconfig.json
+C:\Coforge\sample\bin\Debug\net8.0\sample.dll
+C:\Coforge\sample\bin\Debug\net8.0\sample.pdb
+C:\Coforge\sample\obj\Debug\net8.0\sample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Coforge\sample\obj\Debug\net8.0\sample.AssemblyInfoInputs.cache
+C:\Coforge\sample\obj\Debug\net8.0\sample.AssemblyInfo.cs
+C:\Coforge\sample\obj\Debug\net8.0\sample.csproj.CoreCompileInputs.cache
+C:\Coforge\sample\obj\Debug\net8.0\sample.dll
+C:\Coforge\sample\obj\Debug\net8.0\refint\sample.dll
+C:\Coforge\sample\obj\Debug\net8.0\sample.pdb
+C:\Coforge\sample\obj\Debug\net8.0\sample.genruntimeconfig.cache
+C:\Coforge\sample\obj\Debug\net8.0\ref\sample.dll
